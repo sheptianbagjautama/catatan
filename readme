@@ -13,3 +13,21 @@ MAIL_FROM_ADDRESS="nama email yang akan dilihat oleh user pada saat pengiriman r
 MAIL_FROM_NAME="nama subject di email pada saat pengiriman reset password gmail"</h2>
 
 
+#LARAVEL MULTIAUTH ADMIN AND USER
+1. gunakan auth bawaan laravel "php artisan make:auth"
+2. buat model dan migrate terlebih dahulu untuk role admin "php artisan make:model Admin -m"
+3. samakan isi file model dan migrasi dengan user
+4. tambahkan auth baru file config/auth.php
+5. perubahan di file Exception/Handler.php
+6. duplicate folder auth(Controller) dan ubah namannya menjadi authAdmin
+7. membuat file notifikasi dengan cara "php artisan make:notification AdminResetPasswordNotification"
+8. duplicate juga folder auth(View) dan ubah namannya menjadi authAdmin
+9. beberapa perubahan di file web untuk inisialisasi route
+10. pengetesan email untuk reset password menggunakan log jika sudah production menggunakan smtp.gmail
+
+
+
+
+
+
+
