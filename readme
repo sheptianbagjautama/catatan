@@ -1,8 +1,8 @@
 Catatan Programming
 
-Laravel Reset Password Setting
+#Laravel Reset Password Setting
 ================================
-<h3>configurasi file .env 
+<h2>configurasi file .env 
 MAIL_DRIVER=smtp
 MAIL_HOST=smtp.gmail.com
 MAIL_PORT=587
@@ -10,6 +10,6 @@ MAIL_USERNAME="nama email host yang akan mengirimkan email"
 MAIL_PASSWORD="password email host yang akan mengirimkan email"
 MAIL_ENCRYPTION=tls
 MAIL_FROM_ADDRESS="nama email yang akan dilihat oleh user pada saat pengiriman reset password digmail"
-MAIL_FROM_NAME="nama subject di email pada saat pengiriman reset password gmail"</h3>
+MAIL_FROM_NAME="nama subject di email pada saat pengiriman reset password gmail"</h2>
 
 
