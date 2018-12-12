@@ -26,6 +26,20 @@ MAIL_FROM_NAME="nama subject di email pada saat pengiriman reset password gmail"
 10. pengetesan email untuk reset password menggunakan log jika sudah production menggunakan smtp.gmail
 
 
+Agar tidak terjadi error berikut "Specified key was too long error", kita harus config tipe database seperti ini 
+di config/database.php
+Lakukan perubahan pada dua bagian yang terdapat di ‘mysql’ setting :
+Before
+'charset' => 'utf8mb4',
+'collation' => 'utf8mb4_unicode_ci',
+
+After
+'charset' => 'utf8',
+'collation' => 'utf8_unicode_ci',
+
+Note: Kita melakukan ini karena pada versi mysql yang lama kemungkinan akan menampilkan error character length pada table ketika kita melakukan migration. 
+
+
 
 
 
